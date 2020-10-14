@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: contactsapi-deployment
+  labels:
+    app: contactsapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: contactsapi
+  template:
+    metadata:
+      labels:
+        app: contactsapi
+    spec:
+      containers:
+      - name: contactsapi
+        image: am8850/contactsapi:dev
+        ports:
+        - containerPort: 80
+
+    
