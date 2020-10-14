@@ -62,3 +62,7 @@ az aks create \
 ```kubectl apply -f .```
 
 ## Testing
+
+- Inspect the logs on the ```contactsapi``` running container
+- If caching is working, you will see that if you call ```api/contacts/{state}``` there will be an entry only every 10 seconds
+- If you call ```api/contacts``` you will see a request to the server everytime one is made
