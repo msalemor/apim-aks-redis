@@ -1,4 +1,5 @@
-# Accessing services in Azure AKS via API Management with Redis Caching
+# Accessing services in AKS via API Management with Redis Cache
+
 
 ## Azure Services
 
